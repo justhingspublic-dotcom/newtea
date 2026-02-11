@@ -46,7 +46,7 @@ const placeholderPages = [
 
 function App() {
   return (
-    <Router>
+    <Router basename="/newtea">
       <PageLoader />
       <div className="min-h-screen">
         <Navbar />
