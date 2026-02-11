@@ -1,3 +1,5 @@
+import { getPublicPath } from '../utils/paths'
+
 export const brandFeatures = [
   {
     id: 1,
@@ -38,7 +40,7 @@ export const featuredProducts = [
     nameEn: 'Boba Black Tea',
     category: '特調茶飲',
     price: 65,
-    image: '/images/product-1.jpg',
+    image: getPublicPath('images/product-1.jpg'),
     description: '手沖黑茶搭配Q彈珍珠，濃郁茶香與嚼勁的完美碰撞',
   },
   {
@@ -47,7 +49,7 @@ export const featuredProducts = [
     nameEn: 'Bug-Bitten Black Tea',
     category: '純茶系列',
     price: 55,
-    image: '/images/product-2.jpg',
+    image: getPublicPath('images/product-2.jpg'),
     description: '小綠葉蟬叮咬後的自然蜜香，東方美人的親民版本',
   },
   {
@@ -56,7 +58,7 @@ export const featuredProducts = [
     nameEn: 'Alishan Ginger Tea',
     category: '特調茶飲',
     price: 60,
-    image: '/images/product-3.jpg',
+    image: getPublicPath('images/product-3.jpg'),
     description: '阿里山紅茶佐以老薑暖意，冬日暖心之選',
   },
   {
@@ -65,7 +67,7 @@ export const featuredProducts = [
     nameEn: 'Six Grain Tea',
     category: '養生系列',
     price: 55,
-    image: '/images/product-4.jpg',
+    image: getPublicPath('images/product-4.jpg'),
     description: '六種穀物精心調配，溫潤養生的每日必備',
   },
   {
@@ -74,7 +76,7 @@ export const featuredProducts = [
     nameEn: 'Rice Aroma Latte',
     category: '拿鐵系列',
     price: 70,
-    image: '/images/product-5.jpg',
+    image: getPublicPath('images/product-5.jpg'),
     description: '獨家米香基底搭配醇厚鮮奶，東方風味拿鐵',
   },
   {
@@ -83,7 +85,7 @@ export const featuredProducts = [
     nameEn: 'Rose Rice Koji',
     category: '特調茶飲',
     price: 65,
-    image: '/images/product-6.jpg',
+    image: getPublicPath('images/product-6.jpg'),
     description: '玫瑰花香與米麴甘甜的浪漫邂逅',
   },
   {
@@ -92,7 +94,7 @@ export const featuredProducts = [
     nameEn: 'Siwang Iced Tea',
     category: '冰茶系列',
     price: 50,
-    image: '/images/product-7.jpg',
+    image: getPublicPath('images/product-7.jpg'),
     description: '清爽冰鎮的台灣好茶，夏日消暑首選',
   },
   {
@@ -101,7 +103,7 @@ export const featuredProducts = [
     nameEn: 'Jujube Cinnamon Jelly',
     category: '養生系列',
     price: 65,
-    image: '/images/product-8.jpg',
+    image: getPublicPath('images/product-8.jpg'),
     description: '紅棗桂圓與膳食纖維凍的養生甜飲',
   },
 ]
@@ -113,7 +115,7 @@ export const shopProducts = [
     nameEn: 'Alishan Jinxuan Tea Bag',
     price: 350,
     originalPrice: 420,
-    image: '/images/product-3.jpg',
+    image: getPublicPath('images/product-3.jpg'),
     tag: '熱銷',
     category: '茶包系列',
   },
@@ -122,7 +124,7 @@ export const shopProducts = [
     name: '日月潭紅茶禮盒',
     nameEn: 'Sun Moon Lake Gift Box',
     price: 880,
-    image: '/images/product-1.jpg',
+    image: getPublicPath('images/product-1.jpg'),
     tag: '送禮首選',
     category: '禮盒系列',
   },
@@ -131,7 +133,7 @@ export const shopProducts = [
     name: '高山烏龍散茶',
     nameEn: 'High Mountain Oolong',
     price: 560,
-    image: '/images/product-6.jpg',
+    image: getPublicPath('images/product-6.jpg'),
     tag: '新品',
     category: '散茶系列',
   },
@@ -141,7 +143,7 @@ export const shopProducts = [
     nameEn: 'Honey Black Tea Set',
     price: 480,
     originalPrice: 560,
-    image: '/images/product-8.jpg',
+    image: getPublicPath('images/product-8.jpg'),
     tag: '限時優惠',
     category: '茶包系列',
   },
@@ -153,7 +155,7 @@ export const latestNews = [
     title: '東港文昌店 盛大開幕',
     date: '2025/7/26',
     excerpt: '7/26(一)～7/31(四) 開幕期間全品項買一送一，歡迎蒞臨品茶！',
-    image: '/images/news-1.png',
+    image: getPublicPath('images/news-1.png'),
     category: '門市消息',
   },
   {
@@ -161,7 +163,7 @@ export const latestNews = [
     title: '這夏太美荔',
     date: '2025/7/1',
     excerpt: '夏季限定荔枝系列新品上市，新鮮荔枝搭配手沖好茶，清甜消暑。',
-    image: '/images/news-2.png',
+    image: getPublicPath('images/news-2.png'),
     category: '新品上市',
   },
   {
@@ -169,7 +171,7 @@ export const latestNews = [
     title: '永康中華店 盛大開幕',
     date: '2025/6/30',
     excerpt: '6/30(一)～7/4(五) 加入LINE好友即贈好禮，多項開幕優惠等你來。',
-    image: '/images/news-3.png',
+    image: getPublicPath('images/news-3.png'),
     category: '門市消息',
   },
 ]

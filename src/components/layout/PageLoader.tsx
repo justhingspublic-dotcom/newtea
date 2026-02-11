@@ -1,6 +1,7 @@
 import { motion, AnimatePresence } from 'framer-motion'
 import { useState, useEffect } from 'react'
 import Lottie from 'lottie-react'
+import { getPublicPath } from '../../utils/paths'
 
 export default function PageLoader() {
   const [isVisible, setIsVisible] = useState(() => {
@@ -14,7 +15,7 @@ export default function PageLoader() {
 
   useEffect(() => {
     if (!isVisible) return
-    fetch('/animations/tea-pour.json')
+    fetch(getPublicPath('animations/tea-pour.json'))
       .then((res) => res.json())
       .then((data) => setAnimationData(data))
       .catch(() => setIsVisible(false))
@@ -71,7 +72,7 @@ export default function PageLoader() {
 
           {/* Logo from bottom */}
           <motion.img
-            src="/images/logo.png"
+            src={getPublicPath('images/logo.png')}
             alt="樂台羽茶"
             className="h-10 md:h-12 mt-4"
             initial={{ opacity: 0, y: 30 }}

@@ -3,12 +3,13 @@ import { useRef, useState, useEffect, useCallback } from 'react'
 import { ArrowRight, Coffee, ShoppingBag, ChevronLeft, ChevronRight } from 'lucide-react'
 import Button from '../ui/Button'
 import WaveDivider from '../ui/WaveDivider'
+import { getPublicPath } from '../../utils/paths'
 
 const heroSlides = [
-  { src: '/images/hero-1.jpg', mobileSrc: '/images/hero-1-mobile.jpg' },
-  { src: '/images/hero-2.jpg', mobileSrc: '/images/hero-2-mobile.jpg' },
-  { src: '/images/hero-3.jpg', mobileSrc: '/images/hero-3-mobile.jpg' },
-  { src: '/images/hero-4.jpg', mobileSrc: '/images/hero-4-mobile.jpg' },
+  { src: getPublicPath('images/hero-1.jpg'), mobileSrc: getPublicPath('images/hero-1-mobile.jpg') },
+  { src: getPublicPath('images/hero-2.jpg'), mobileSrc: getPublicPath('images/hero-2-mobile.jpg') },
+  { src: getPublicPath('images/hero-3.jpg'), mobileSrc: getPublicPath('images/hero-3-mobile.jpg') },
+  { src: getPublicPath('images/hero-4.jpg'), mobileSrc: getPublicPath('images/hero-4-mobile.jpg') },
 ]
 
 // Tea leaf indicator SVG

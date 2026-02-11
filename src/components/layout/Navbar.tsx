@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X, ShoppingBag } from 'lucide-react'
 import { navLinks } from '../../data/mockData'
+import { getPublicPath } from '../../utils/paths'
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -43,7 +44,7 @@ export default function Navbar() {
             {/* Logo */}
             <a href="/" className="flex items-center gap-2.5 group">
               <img
-                src="/images/logo.png"
+                src={getPublicPath('images/logo.png')}
                 alt="樂台羽茶"
                 className={`h-9 md:h-10 transition-all duration-300 ${
                   isScrolled ? '' : 'brightness-0 invert'
@@ -121,7 +122,7 @@ export default function Navbar() {
             >
               {/* Logo in mobile menu */}
               <img
-                src="/images/logo.png"
+                src={getPublicPath('images/logo.png')}
                 alt="樂台羽茶"
                 className="h-12 brightness-0 invert mb-4"
               />

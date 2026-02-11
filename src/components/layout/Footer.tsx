@@ -2,6 +2,7 @@ import { motion } from 'framer-motion'
 import { Instagram, Facebook, MapPin, Phone, Mail } from 'lucide-react'
 import { useScrollAnimation } from '../../hooks/useScrollAnimation'
 import { fadeInUp, staggerContainer } from '../../styles/animations'
+import { getPublicPath } from '../../utils/paths'
 
 export default function Footer() {
   const { ref, isInView } = useScrollAnimation(0.05)
@@ -19,7 +20,7 @@ export default function Footer() {
           {/* Brand Column */}
           <motion.div variants={fadeInUp} className="lg:col-span-1">
             <img
-              src="/images/logo.png"
+              src={getPublicPath('images/logo.png')}
               alt="樂台羽茶"
               className="h-10 brightness-0 invert mb-4"
             />

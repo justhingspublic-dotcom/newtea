@@ -4,6 +4,7 @@ import { useScrollAnimation } from '../../hooks/useScrollAnimation'
 import { fadeInUp } from '../../styles/animations'
 import WaveDivider from '../ui/WaveDivider'
 import SteamEffect from '../animations/SteamEffect'
+import { getPublicPath } from '../../utils/paths'
 
 export default function PotBrewingShowcase() {
   const containerRef = useRef(null)
@@ -67,7 +68,7 @@ export default function PotBrewingShowcase() {
                 className="relative overflow-hidden aspect-square"
               >
                 <img
-                  src="/images/feature.jpg"
+                  src={getPublicPath('images/feature.jpg')}
                   alt="壺沖現泡"
                   className="w-full h-full object-cover scale-110"
                 />
