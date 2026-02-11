@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+/* ===== Custom Theme ===== */
+@theme {
+  /* Green as accent only */
+  --color-brand-green: #3A7A52;
+  --color-brand-green-light: #4A9A68;
+  --color-brand-green-dark: #2D5A3D;
+
+  /* Amber as primary */
+  --color-brand-amber: #B8834A;
+  --color-brand-amber-light: #D4A87E;
+  --color-brand-amber-dark: #9A6B38;
+  --color-brand-amber-deep: #7A5530;
+
+  /* Warm neutrals as base */
+  --color-brand-cream: #F5F0E8;
+  --color-brand-cream-light: #FAF7F2;
+  --color-brand-offwhite: #FDFBF7;
+  --color-brand-warm-gray: #E8E0D4;
+
+  /* Dark tones - warm brown instead of green */
+  --color-brand-dark: #4A4036; /* Lighter, more muted brown */
+  --color-brand-dark-soft: #63584D;
+  --color-brand-gray: #8C837B;
+  --color-brand-gray-light: #B5AEA7;
+
+  --font-serif: 'Noto Serif TC', 'Georgia', serif;
+  --font-sans: 'Noto Sans TC', 'Helvetica Neue', sans-serif;
+  --font-display: 'Cormorant Garamond', 'Noto Serif TC', serif;
+}
+
+/* ===== Base Styles ===== */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    color: var(--color-brand-dark);
+    background-color: var(--color-brand-offwhite);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+    letter-spacing: 0.05em; /* Add general breathing room */
+  }
+
+  ::selection {
+    background-color: var(--color-brand-amber);
+    color: white;
+  }
+}
+
+/* ===== Custom Utilities ===== */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* ===== Scrollbar ===== */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-brand-cream);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-brand-amber);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-brand-amber-dark);
+}
