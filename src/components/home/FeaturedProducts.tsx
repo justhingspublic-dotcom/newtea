@@ -1,4 +1,4 @@
-import { motion, useMotionValue, useTransform, animate } from 'framer-motion'
+import { motion, useMotionValue, useTransform } from 'framer-motion'
 import { useRef, useEffect, useState, useCallback } from 'react'
 import { useScrollAnimation } from '../../hooks/useScrollAnimation'
 import { featuredProducts } from '../../data/mockData'

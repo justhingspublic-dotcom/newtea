@@ -1,4 +1,4 @@
-import { motion, useMotionValue, useSpring } from 'framer-motion'
+import { motion, useSpring } from 'framer-motion'
 import { useEffect } from 'react'
 import { useMousePosition } from '../../hooks/useMousePosition'
 import { useReducedMotion } from '../../hooks/useReducedMotion'
